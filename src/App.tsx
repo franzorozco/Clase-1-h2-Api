@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div style={{ maxWidth: 900, margin: "2rem auto", padding: "0 1rem" }}>
-      <h2>Buscar dirección → coordenadas (Google Geocoding)</h2>
+      <h2>Buscar dirección</h2>
 
       <form
         onSubmit={handleSearch}
@@ -87,7 +87,7 @@ function App() {
           style={{ flex: 1, padding: "8px 10px" }}
           value={address}
           onChange={(e) => setAddress(e.target.value)}
-          placeholder="Escribe una dirección, ej. Plaza Murillo, La Paz"
+          placeholder="Escribe la direccion"
         />
         <button type="submit" disabled={loading} style={{ padding: "8px 12px" }}>
           {loading ? "Buscando..." : "Buscar"}
